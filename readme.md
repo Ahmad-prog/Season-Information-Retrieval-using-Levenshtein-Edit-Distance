@@ -13,7 +13,7 @@ A web application for browsing and searching Pakistani TV dramas, featuring fuzz
 
 - Fuzzy search using Levenshtein Edit Distance to handle misspellings and variations in Urdu words written in English
 ![image](https://github.com/user-attachments/assets/c1996c79-e54c-4ba7-9352-ad9421f6f140)
-- 
+
 - Add new dramas to the database
 ![image](https://github.com/user-attachments/assets/3d7061cc-1e56-40bf-8393-529838accd26)
 
