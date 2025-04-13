@@ -28,8 +28,7 @@ A web application for browsing and searching Pakistani TV dramas, featuring fuzz
 
 - **Frontend**: Streamlit
 - **Backend**: Python
-- **Database**: PostgreSQL, SQLite (the project has sqlite setup by default)
-- To use postgresSQL change the file name backend/postgres_database.py to database.py
+- **Database**: PostgreSQL
 - **Search Algorithm**: Levenshtein Edit Distance for fuzzy matching
 
 ## Levenshtein Edit Distance
@@ -74,6 +73,7 @@ For example, "Andhera Ujala" (اندھیرا اجالا) might be typed as "Ande
 4. Initialize the database with sample data:
    ```
    python -m backend.init_db
+   python -m backend.add_tags
    ```
 
 5. Run the application:
