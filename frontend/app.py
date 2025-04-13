@@ -4,7 +4,7 @@ import os
 
 # Add the parent directory to the path so we can import from backend
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from backend.database import get_all_dramas, search_dramas, get_all_tags, get_dramas_by_tag
+from backend.postgres_database import get_all_dramas, search_dramas, get_all_tags, get_dramas_by_tag
 from backend.levenshtein import levenshtein_distance
 from PIL import Image
 import base64
@@ -311,7 +311,7 @@ elif page == "Browse by Tags":
 # Add New Drama Page
 elif page == "Add New Drama":
     st.markdown("<h2 class='page-header'>Add New Drama</h2>", unsafe_allow_html=True)
-    from backend.database import add_drama
+    from backend.postgres_database import add_drama
     import uuid
     import os
     from datetime import datetime

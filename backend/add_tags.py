@@ -5,7 +5,7 @@ import random
 
 # Add the current directory to the path to allow absolute imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from database import get_connection
+from postgres_database import get_connection
 
 
 def add_tags_column():

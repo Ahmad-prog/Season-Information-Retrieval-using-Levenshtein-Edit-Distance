@@ -3,7 +3,7 @@ import sys
 
 # Add the current directory to the path to allow absolute imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from database import get_connection, create_tables
+from postgres_database import get_connection, create_tables
 
 
 def initialize_database():

@@ -6,7 +6,7 @@ from PIL import Image
 # Add the parent directory to the path so we can import from backend
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from backend.database import get_all_dramas
+from backend.postgres_database import get_all_dramas
 
 
 def display_drama_card(drama):

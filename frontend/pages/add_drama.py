@@ -5,7 +5,7 @@ import os
 # Add the parent directory to the path so we can import from backend
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-from backend.database import add_drama
+from backend.postgres_database import add_drama
 
 
 def app():

@@ -10,10 +10,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 def create_sqlite_database():
     """Create a SQLite database with sample Pakistani dramas for Streamlit Cloud deployment"""
-
     # Create data directory if it doesn't exist
     os.makedirs('data', exist_ok=True)
-
     # Create images directory if it doesn't exist
     if not os.path.exists('images'):
         os.makedirs('images')
@@ -45,7 +43,6 @@ def create_sqlite_database():
         # Check if we already have data
         cursor.execute("SELECT COUNT(*) FROM dramas")
         count = cursor.fetchone()[0]
-
         if count > 0:
             print(f"Database already contains {count} dramas. Skipping initialization.")
             return db_path
@@ -293,7 +290,55 @@ def create_sqlite_database():
     return db_path
 
 
+def verify_database(db_path):
+    """Verify the database was created correctly"""
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    try:
+        # Check if the dramas table exists
+        cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='dramas'")
+        if not cursor.fetchone():
+            print("Error: dramas table does not exist!")
+            return False
+
+        # Count the number of dramas
+        cursor.execute("SELECT COUNT(*) FROM dramas")
+        count = cursor.fetchone()[0]
+        print(f"Number of dramas in the database: {count}")
+
+        # Show a sample of dramas with their tags
+        cursor.execute("SELECT id, title, director, year, tags FROM dramas LIMIT 5")
+        rows = cursor.fetchall()
+
+        print("\nSample dramas:")
+        for row in rows:
+            tags = json.loads(row['tags']) if row['tags'] else []
+            print(f"ID: {row['id']}, Title: {row['title']}, Director: {row['director']}, Year: {row['year']}")
+            print(f"Tags: {', '.join(tags)}")
+            print("-" * 50)
+
+        return True
+
+    except Exception as e:
+        print(f"Error verifying database: {e}")
+        return False
+
+    finally:
+        cursor.close()
+        conn.close()
+
+
 if __name__ == "__main__":
     db_path = create_sqlite_database()
     print(f"SQLite database created at: {db_path}")
+
+    # Verify the database
+    print("\nVerifying database...")
+    if verify_database(db_path):
+        print("Database verification successful!")
+    else:
+        print("Database verification failed!")
+
     print("Database initialization complete")
