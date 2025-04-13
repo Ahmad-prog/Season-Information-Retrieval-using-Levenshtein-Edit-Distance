@@ -2,13 +2,27 @@
 
 A web application for browsing and searching Pakistani TV dramas, featuring fuzzy search capabilities using Levenshtein Edit Distance.
 
+
 ## Features
+
+![image](https://github.com/user-attachments/assets/db8661a2-2adc-4e2a-8805-e78bdd50b974)
 
 - Browse a collection of Pakistani dramas
 - Search for dramas by title or director
+![image](https://github.com/user-attachments/assets/bde59dec-4183-490e-a411-25ec32510f72)
+
 - Fuzzy search using Levenshtein Edit Distance to handle misspellings and variations in Urdu words written in English
+![image](https://github.com/user-attachments/assets/c1996c79-e54c-4ba7-9352-ad9421f6f140)
+- 
 - Add new dramas to the database
-- Sort and filter dramas by various criteria
+![image](https://github.com/user-attachments/assets/3d7061cc-1e56-40bf-8393-529838accd26)
+
+- Sort and filter dramas by various criteria A-Z, -A, by year, by rating, oldest newest
+![image](https://github.com/user-attachments/assets/88756ef6-9d30-4f77-af68-cc8a4c9713f1)
+ 
+- Every drama has it own tag and by clicking on tag you can view more dramas like that comedy, old, classic, award winning, 6 more
+![image](https://github.com/user-attachments/assets/4a7b743b-6afc-4c17-b945-2477a95f8646)
+
 
 ## Technology Stack
 
