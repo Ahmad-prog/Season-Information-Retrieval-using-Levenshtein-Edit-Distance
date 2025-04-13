@@ -64,7 +64,7 @@ def app():
     col1, col2 = st.columns([3, 1])
 
     with col1:
-        search_term = st.text_input("Enter drama title or director name")
+        search_term = st.text_input("Enter drama title or director name", label_visibility="collapsed")
 
     with col2:
         fuzzy_threshold = st.slider("Fuzzy Match Threshold", 0.0, 1.0, 0.3, 0.1,

@@ -1,26 +1,42 @@
-import psycopg2
-from psycopg2 import sql
 import os
 import sys
+import json
 
 # Add the current directory to the path to allow absolute imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from levenshtein import is_fuzzy_match
 
+# Check if running on Streamlit Cloud
+is_streamlit_cloud = os.environ.get('IS_STREAMLIT_CLOUD', False)
 
 def get_connection():
-    """Establish a connection to the PostgreSQL database"""
-    try:
-        conn = psycopg2.connect(
-            host="localhost",
-            database="drama_db",  # Make sure this database exists in PostgreSQL
-            user="ahmad",  # Replace with your PostgreSQL username
-            password="#Ahmad1235$"  # Replace with your PostgreSQL password
-        )
-        return conn
-    except Exception as e:
-        print(f"Database connection error: {e}")
-        return None
+    """Establish a connection to the database (PostgreSQL or SQLite)"""
+    if is_streamlit_cloud:
+        # Use SQLite for Streamlit Cloud deployment
+        import sqlite3
+        try:
+            # Create a data directory if it doesn't exist
+            os.makedirs('data', exist_ok=True)
+            conn = sqlite3.connect('data/drama_db.sqlite')
+            conn.row_factory = sqlite3.Row
+            return conn
+        except Exception as e:
+            print(f"SQLite connection error: {e}")
+            return None
+    else:
+        # Use PostgreSQL for local development
+        import psycopg2
+        try:
+            conn = psycopg2.connect(
+                host="localhost",
+                database="drama_db",  # Make sure this database exists in PostgreSQL
+                user="ahmad",  # Replace with your PostgreSQL username
+                password="#Ahmad1235$"  # Replace with your PostgreSQL password
+            )
+            return conn
+        except Exception as e:
+            print(f"PostgreSQL connection error: {e}")
+            return None
 
 
 def create_tables():
