@@ -73,6 +73,7 @@ For example, "Andhera Ujala" (اندھیرا اجالا) might be typed as "Ande
 4. Initialize the database with sample data:
    ```
    python -m backend.init_db
+   python -m backend.add_tags
    ```
 
 5. Run the application:
