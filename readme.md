@@ -17,7 +17,7 @@ A web application for browsing and searching Pakistani TV dramas, featuring fuzz
 - Add new dramas to the database
 ![image](https://github.com/user-attachments/assets/3d7061cc-1e56-40bf-8393-529838accd26)
 
-- Sort and filter dramas by various criteria A-Z, -A, by year, by rating, oldest newest
+- Sort and filter dramas by various criteria A-Z, Z-A, by year, by rating, oldest, newest
 ![image](https://github.com/user-attachments/assets/88756ef6-9d30-4f77-af68-cc8a4c9713f1)
  
 - Every drama has it own tag and by clicking on tag you can view more dramas like that comedy, old, classic, award winning, 6 more
