@@ -28,7 +28,7 @@ A web application for browsing and searching Pakistani TV dramas, featuring fuzz
 
 - **Frontend**: Streamlit
 - **Backend**: Python
-- **Database**: PostgreSQL
+- **Database**: PostgreSQL, SQLite (the project has sqlite file you can use sqlite for hassle free db setup)
 - **Search Algorithm**: Levenshtein Edit Distance for fuzzy matching
 
 ## Levenshtein Edit Distance
