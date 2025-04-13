@@ -1,0 +1,8 @@
+streamlit==1.22.0
+psycopg2-binary==2.9.6
+pandas==1.5.3
+pillow==9.5.0
+python-dotenv==1.0.0
+numpy==1.23.5
+## might need "pip install psycopg2-binary pillow"
+

@@ -1,0 +1,883 @@
+/* Main styles for Pakistani Drama Database */
+
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Custom header */
+.custom-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #01937C 0%, #45B69C 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-size: 40px;
+}
+
+.site-title {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.site-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Top navigation */
+.top-nav {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Page headers */
+.page-header, .section-header {
+    color: #01937C;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 2px solid #E5E7EB;
+    font-weight: 600;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features section */
+.features-section {
+    padding: 40px 0;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: calc(25% - 20px);
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #01937C;
+    margin-bottom: 10px;
+}
+
+/* Drama card styles */
+.drama-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drama-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.drama-title {
+    color: #01937C;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.drama-info {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.drama-rating {
+    color: #047857;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.drama-description {
+    color: #4B5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Info card */
+.info-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #01937C;
+}
+
+.info-card h3 {
+    color: #01937C;
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    color: #01937C;
+    margin: 15px 0 10px 0;
+}
+
+.info-card p, .info-card li {
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+/* Form styles */
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    color: #01937C;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 10px;
+}
+
+/* Search container */
+.search-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Search placeholder */
+.search-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #01937C;
+}
+
+.search-placeholder h3 {
+    color: #01937C;
+    margin-bottom: 15px;
+}
+
+.search-tip {
+    font-style: italic;
+    color: #6B7280;
+    margin: 15px 0;
+}
+
+.search-examples {
+    background-color: #F3F4F6;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.search-examples ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #9CA3AF;
+}
+
+.empty-state h3 {
+    color: #4B5563;
+    margin-bottom: 15px;
+}
+
+.empty-state p {
+    color: #6B7280;
+}
+
+/* Results header */
+.results-header {
+    color: #01937C;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.match-header {
+    color: #01937C;
+    margin: 15px 0;
+}
+
+.match-details-table {
+    margin-bottom: 30px;
+}
+
+/* Filter container */
+.filter-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.footer-section h4 {
+    color: #01937C;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+    color: #D1D5DB;
+}
+
+.footer-section p {
+    color: #D1D5DB;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #4B5563;
+}
+
+.footer-bottom p {
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+
+    .footer-section {
+        flex: 100%;
+    }
+
+    .drama-title {
+        font-size: 20px;
+    }
+
+    .drama-info, .drama-description {
+        font-size: 14px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 28px;
+    }
+
+    .custom-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Streamlit specific overrides */
+.stRadio > div {
+    flex-direction: row;
+    gap: 10px;
+}
+
+.stRadio label {
+    background-color: #f3f4f6;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.stRadio label:hover {
+    background-color: #e5e7eb;
+}
+
+/* Style for the selected radio button */
+.stRadio [data-baseweb="radio"] input:checked + div {
+    background-color: #01937C;
+    border-color: #01937C;
+}
+
+/* Button styling */
+button[kind="primary"] {
+    background-color: #01937C !important;
+    color: white !important;
+}
+
+button[kind="primary"]:hover {
+    background-color: #017e6a !important;
+}
+
+/* Input field styling */
+.stTextInput > div > div > input {
+    border-radius: 5px;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #01937C !important;
+    box-shadow: 0 0 0 1px #01937C !important;
+}
+
+/* Slider styling */
+.stSlider [data-baseweb="slider"] div {
+    background-color: #01937C !important;
+}
+
+/* Select box styling */
+.stSelectbox [data-baseweb="select"] div {
+    border-radius: 5px;
+}
+
+.stSelectbox [data-baseweb="select"] div:focus {
+    border-color: #01937C !important;
+    box-shadow: 0 0 0 1px #01937C !important;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    color: #01937C !important;
+    font-weight: 600 !important;
+}
+
+/* Table styling */
+.stTable {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stTable thead th {
+    background-color: #01937C !important;
+    color: white !important;
+}
+
+.stTable tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* Drama grid for larger screens */
+.drama-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .drama-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.drama-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01937C;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #017e6a;
+}
+
+/* Search results container */
+.search-results {
+    margin-top: 30px;
+}
+
+/* Form input focus effects */
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    border-color: #01937C !important;
+    box-shadow: 0 0 0 2px rgba(1, 147, 124, 0.2) !important;
+}
+
+/* Button hover effects */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Custom badges */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.badge-primary {
+    background-color: #01937C;
+    color: white;
+}
+
+.badge-secondary {
+    background-color: #6B7280;
+    color: white;
+}
+
+.badge-success {
+    background-color: #10B981;
+    color: white;
+}
+
+/* Custom alerts */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.alert-info {
+    background-color: #EFF6FF;
+    border-left: 4px solid #3B82F6;
+    color: #1E40AF;
+}
+
+.alert-success {
+    background-color: #ECFDF5;
+    border-left: 4px solid #10B981;
+    color: #047857;
+}
+
+.alert-warning {
+    background-color: #FFFBEB;
+    border-left: 4px solid #F59E0B;
+    color: #B45309;
+}
+
+.alert-danger {
+    background-color: #FEF2F2;
+    border-left: 4px solid #EF4444;
+    color: #B91C1C;
+}
+
+/* Hover effects for links */
+a {
+    color: #01937C;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #017e6a;
+    text-decoration: underline;
+}
+
+/* Custom blockquote */
+blockquote {
+    border-left: 4px solid #01937C;
+    padding-left: 15px;
+    color: #4B5563;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+/* Image hover effects */
+img {
+    transition: transform 0.3s ease;
+}
+
+.drama-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Custom progress bar */
+.progress {
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #01937C;
+    border-radius: 4px;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #01937C;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+    background-color: #01937C;
+}
+
+.custom-checkbox input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+/* Custom radio button */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.custom-radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #01937C;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"]:checked {
+    border-color: #01937C;
+}
+
+.custom-radio input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #01937C;
+    border-radius: 50%;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination-item {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: white;
+    color: #01937C;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-item:hover {
+    background-color: #01937C;
+    color: white;
+}
+
+.pagination-item.active {
+    background-color: #01937C;
+    color: white;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #01937C;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Transitions for smooth UI */
+* {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Remove green highlight from radio buttons */
+.stRadio [data-baseweb="radio"] input:checked + div {
+    background-color: #f0f2f6 !important; /* Streamlit's default background color */
+    border-color: #ccc !important;
+}
+
+/* Remove green highlight from slider */
+.stSlider [data-baseweb="slider"] div[data-testid="stThumbValue"] {
+    background-color: #f0f2f6 !important;
+}
+
+.stSlider [data-baseweb="slider"] div[role="slider"] {
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+}
+
+.stSlider [data-baseweb="slider"] div[data-component="Track"] div:first-child {
+    background-color: #ccc !important;
+}
+
+/* Remove green color from rating */
+.drama-rating {
+    color: #333 !important; /* Standard text color instead of green */
+}
+
+/* Override any remaining green highlights */
+div[style*="rgb(1, 147, 124)"] {
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+    color: #333 !important;
+}
+
+/* File uploader styling */
+.stFileUploader > div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.stFileUploader > div > div {
+    background-color: transparent !important;
+}
+
+.stFileUploader [data-testid="stFileUploadDropzone"] {
+    border: 2px dashed #ccc !important;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stFileUploader [data-testid="stFileUploadDropzone"]:hover {
+    border-color: #aaa !important;
+}
+
+.stFileUploader [data-testid="stFileUploadDropzone"] > div {
+    color: #666;
+}
+
+/* Tag styling */
+.tags-container {
+    margin-top: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f2f6;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+    background-color: #e0e2e6;
+}
+
+/* Tags cloud styling */
+.tags-cloud {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags-cloud button {
+    background-color: #f0f2f6;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.tags-cloud button:hover {
+    background-color: #e0e2e6;
+    transform: translateY(-2px);
+}
